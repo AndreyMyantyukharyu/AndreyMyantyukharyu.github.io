@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <title>Barbershop "Borodinsky"</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link  href="css/normalize.css" rel="stylesheet">
+    <link  href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
         <img src="img\svg\index-logo.svg" width="368" height="153"
           alt="Logo Barbershopа 'Borodinsky'">
         </a>
@@ -23,14 +29,15 @@
         </ul>
       </nav>
     </header>
+
     <main class="container">
 
       <h1 class="visually-hidden">Barbershop 'Borodinsky'</h1>
 
       <section class="features">
         <h2 class="visually-hidden">Benefits</h2>
-        <ul class="fetures-list">
-          <li class="features-item">
+        <ul class="features-list">
+          <li class="feature-item">
             <h3>Fast service</h3>
             <p>We do our job quickly! Two hours will fly by and you
               - happy owner of a stylish haircut!</p>
@@ -48,23 +55,26 @@
         </ul>
       </section>
 
-      <section class="news">
-        <h2>News</h2>
-        <ul class="news-list">
-          <li class="news-item">
-            <p>We finally got the Jagermeister! Now you can skip
-              a glass during a haircut</p>
-            <time datetime="2019-01-11" >11 january</time>
-          </li>
-          <li class="news-item">
-            <p>There is a new addition to our team, Boris 'Razor'
-              Boris, the owner of many titles and awards, has replenished our
-              slender ranks</p>
-            <time datetime="2016-01-18">18 january</time>
-          </li>
-        </ul>
-        <a class="button" href="news.html">All news</a>
-      </section>
+      <div class="index-columns"><div
+        <section class="news">
+          <h2>News</h2>
+          <ul class="news-list">
+            <li class="news-item">
+              <p>We finally got the Jagermeister! Now you can skip
+                a glass during a haircut</p>
+              <time datetime="2019-01-11" >11 january</time>
+            </li>
+            <li class="news-item">
+              <p>There is a new addition to our team, Boris 'Razor'
+                Boris, the owner of many titles and awards, has replenished our
+                slender ranks</p>
+              <time datetime="2016-01-18">18 january</time>
+            </li>
+          </ul>
+          <a class="button" href="news.html">All news</a>
+        </section>
+        </div>
+      
 
       <section class="gallery">
         <h2>Photo gallery</h2>
@@ -96,7 +106,7 @@
         <h2>Book time</h2>
         <p class="appointment-info">Specify the desired date and time and we will contact you
           to confirm your reservation</p>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label for="appointment-date">Date</label>
             <input id="appointment-date" type="date" name="date" value="2020-01-01">
@@ -141,25 +151,26 @@
     <section class="modal modal-login">
       <h2>My account</h2>
       <p>Enter your username and password</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="login form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label for="user-login">Login</label>
-          <input id="user-login" type="email" name="login" placeholder="email@example.com">
+          <label class="visually-hidden" for="user-login">Login</label>
+          <input class="login-icon-user" id="user-login" type="email" name="login" placeholder="email@example.com">
         </p>
         <p>
-          <label for="user-password">Password</label>
-          <input id="user-password" type="password" name="password" value="*********">
+          <label class="visually-hidden" for="user-password">Password</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" value="*********">
         </p>
-        <p>
-          <input type="checkbox" name="remember" id="login-password-info">
-          <label for="login-password-info">Remember me</label>
-          <a href="#">Forgot password</a>
+        <p class="login-password-info">
+          <label class="checkbox">
+            <input class="visually-hidden" type="checkbox" name="remember">
+            <span class="checkbox-indicator"></span>
+            Remember me
+          </label>
+          <a class="restore" href="#">Forgot password</a>
         </p>
-        <button type="submit">
-          Login to
-        </button>
+        <button class="button" type="submit">Login to</button>
       </form>
-      <span clas="modal-close">x</span>
+      <button class="modal-close" type="button">x</button>
     </section>
 
     <section class="modal modal-map">
@@ -168,7 +179,7 @@
         <img src="img\index\map mask.png" width="780" height="560"
         alt="Company office at st. Bolshaya Konbshennaya 19/8, St. Petersburg">
       </p>
-      <span clas="modal-close">x</span>
+      <button class="modal-close" type="button">x</button>
     </section>
   </body>
 </html>
