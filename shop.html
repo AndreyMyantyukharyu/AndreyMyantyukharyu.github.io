@@ -6,14 +6,14 @@
     <title>Shop</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
-    <link  href="css/normalize.css" rel="stylesheet">
-    <link  href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body class="inner-page">
 
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation container">
         <a class="main-header-logo" href="index.html">
           <img src="img\svg\logo.svg" width="111" heigth="24"
           alt="Logo Barbershopа Borodinsky">
@@ -26,7 +26,7 @@
           <li><a href="contacts.html">Contacts</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="login-link"><a href="login.html">Login to</a></li>
+          <li class="login-link"><a href="login.html">Login</a></li>
         </ul>
       </nav>
     </header>
@@ -40,228 +40,237 @@
          <li><a href="catalog.html">Shop</a></li>
          <li class="breadcrumbs-current">Care products</li>
       </ul>
-      <section class="filters">
-        <h2 class="visually-hidden">Filter</h2>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Manufacturer</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input 
-                  filter-input-checkbox" type="checkbox" name="baxter-of-california"
-                  id="filter-baxter-of-california" checked>
-                <label for="filter-baxter-of-california">
-                Baxter of California</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input 
-                filter-input-checkbox" type="checkbox" name="mr-natty"
-                id="filter-malin-goetz">
-                <label for="filter-mr-natty">Mr Natty</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input 
-                filter-input-checkbox" type="checkbox" name="suavecito"
-                id="filter-suavecito">
-                <label for="filter-suavecito">Suavecito</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input 
-                filter-input-checkbox" type="checkbox" name="malin-goetz"
-                id="filter-malin-goetz">
-                <label for="filter-malin-goetz">Malin+Goetz</label></li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input 
-                filter-input-checkbox" type="checkbox" name="murrays"
-                id="filter-murrays" disabled>
-                <label for="filter-murrays">Murray's</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input 
-                filter-input-checkbox" type="checkbox" name="american-crew"
-                id="filter-american-crew">
-                <label for="filter-murrays">American Crew</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Product groups</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input 
-                filter-input-radio" type="radio" name="product-group"
-                value="shaving" id="filter-shave">
-                <label for="filter-shave">Shaving accessories</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input 
-                filter-input-radio" type="radio" name="product-group"
-                value="hair-care" id="filter-care" checked>
-                <label for="filter-care">Care products</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input 
-                filter-input-radio" type="radio" name="product-group"
-                value="accessories" id="filter-accessories">
-                <label for="filter-accessories">Accessories</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="filter-button button" type="submit">Show</button>
-        </form>
-      </section>
+      
+      <div class="catalog-columns">
 
-      <section class="catalog">
-        <h2 class="visually-hidden">List of care products</h2>
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <a href="item.html">
-              <h3>
-                <span class="catalog-category">Travel kit</span>
-                <span class="catalog-item-title">"Baxter of California"</span>
-              </h3>
-              <p class="catalog-item-image">
-                 <img src="img\shop\set.jpg" width="220" heigth="165"
-                 alt="Travel kit Baxter of califotnia">
+        <section class="filters">
+          <h2 class="visually-hidden">Filter</h2>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Manufacturer</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input 
+                    filter-input-checkbox" type="checkbox" name="baxter-of-california"
+                    id="filter-baxter-of-california" checked>
+                  <label for="filter-baxter-of-california">
+                  Baxter of California</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input 
+                  filter-input-checkbox" type="checkbox" name="mr-natty"
+                  id="filter-malin-goetz">
+                  <label for="filter-mr-natty">Mr Natty</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input 
+                  filter-input-checkbox" type="checkbox" name="suavecito"
+                  id="filter-suavecito">
+                  <label for="filter-suavecito">Suavecito</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input 
+                  filter-input-checkbox" type="checkbox" name="malin-goetz"
+                  id="filter-malin-goetz">
+                  <label for="filter-malin-goetz">Malin+Goetz</label></li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input 
+                  filter-input-checkbox" type="checkbox" name="murrays"
+                  id="filter-murrays" disabled>
+                  <label for="filter-murrays">Murray's</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input 
+                  filter-input-checkbox" type="checkbox" name="american-crew"
+                  id="filter-american-crew">
+                  <label for="filter-murrays">American Crew</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Product groups</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input 
+                  filter-input-radio" type="radio" name="product-group"
+                  value="shaving" id="filter-shave">
+                  <label for="filter-shave">Shaving accessories</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input 
+                  filter-input-radio" type="radio" name="product-group"
+                  value="hair-care" id="filter-care" checked>
+                  <label for="filter-care">Care products</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input 
+                  filter-input-radio" type="radio" name="product-group"
+                  value="accessories" id="filter-accessories">
+                  <label for="filter-accessories">Accessories</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="filter-button button" type="submit">Show</button>
+          </form>
+        </section>
+
+        <section class="catalog">
+          <h2 class="visually-hidden">List of care products</h2>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <a href="item.html">
+                <h3>
+                  <span class="catalog-category">Travel kit</span>
+                  <span class="catalog-item-title">"Baxter of California"</span>
+                </h3>
+                <p class="catalog-item-image">
+                  <img src="img\shop\set.jpg" width="220" heigth="165"
+                  alt="Travel kit Baxter of califotnia">
+                </p>
+              </a>
+              <p class="catalog-item-price">
+                <b>35 $</b>
+                <a class="button" href="#">Buy</a>
               </p>
-            </a>
-            <p class="catalog-item-price">
-               <b>35 $</b>
-               <a class="button" href="#">Buy</a>
-            </p>
-          </li>
-          <li class="catalog-item">
-            <a href="catalog-item.html">
-              <h3>
-                <span class="catalog-category">Moisturizing conditioner</span>
-                <span class="catalog-item-title">"Baxter of California"</span>
-              </h3>
-              <p class="catalog-item-image">
-                <img src="img\shop\conditioner.jpg" width="220" heigth="165"
-                alt="Moisturizing conditioner Baxter of california">
+            </li>
+            <li class="catalog-item">
+              <a href="catalog-item.html">
+                <h3>
+                  <span class="catalog-category">Moisturizing conditioner</span>
+                  <span class="catalog-item-title">"Baxter of California"</span>
+                </h3>
+                <p class="catalog-item-image">
+                  <img src="img\shop\conditioner.jpg" width="220" heigth="165"
+                  alt="Moisturizing conditioner Baxter of california">
+                </p>
+              </a>
+              <p class="catalog-item-price">
+                <b>20 $</b>
+                <a class="button" href="#">Buy</a>
               </p>
-             </a>
-            <p class="catalog-item-price">
-              <b>20 $</b>
-              <a class="button" href="#">Buy</a>
-            </p>
-          </li>
-          <li class="catalog-item">
-            <a href="catalog-item.html">
-              <h3>
-                <span class="catalog-category">Hair gel</span>
-                <span class="catalog-item-title">"Suavecito"</span>
-              </h3>
-              <p class="catalog-item-image">
-                <img src="img\shop\wax.jpg" width="220" heigth="165"
-                alt="Hair gel Suavecito">
+            </li>
+            <li class="catalog-item">
+              <a href="catalog-item.html">
+                <h3>
+                  <span class="catalog-category">Hair gel</span>
+                  <span class="catalog-item-title">"Suavecito"</span>
+                </h3>
+                <p class="catalog-item-image">
+                  <img src="img\shop\wax.jpg" width="220" heigth="165"
+                  alt="Hair gel Suavecito">
+                </p>
+              </a>
+              <p class="catalog-item-price">
+                <b>17 $</b>
+                <a class="button" href="#">Buy</a>
               </p>
-            </a>
-            <p class="catalog-item-price">
-              <b>17 $</b>
-              <a class="button" href="#">Buy</a>
-            </p>
-          </li>
-          <li class="catalog-item">
-            <a href="catalog-item.html">
-              <h3>
-                <span class="catalog-category">Hair styling clay</span>
-                <span class="catalog-item-title">"American crew"</span>
-              </h3>
-              <p class="catalog-item-image">
-                <img src="img\shop\glu.jpg" width="220" heigth="165"
-                alt="Hair styling clay American crew">
+            </li>
+            <li class="catalog-item">
+              <a href="catalog-item.html">
+                <h3>
+                  <span class="catalog-category">Hair styling clay</span>
+                  <span class="catalog-item-title">"American crew"</span>
+                </h3>
+                <p class="catalog-item-image">
+                  <img src="img\shop\glu.jpg" width="220" heigth="165"
+                  alt="Hair styling clay American crew">
+                </p>
+              </a>
+              <p class="catalog-item-price">
+                <b>19 $</b>
+                <a class="button" href="#">Buy</a>
               </p>
-            </a>
-            <p class="catalog-item-price">
-              <b>19 $</b>
-              <a class="button" href="#">Buy</a>
-            </p>
-          </li>
-          <li class="catalog-item">
-            <a href="catalog-item.html">
-              <h3>
-                <span class="catalog-category">Hair gel</span>
-                <span class="catalog-item-title">"American crew"</span>
-              </h3>
-              <p class="catalog-item-image">
-                <img src="img\shop\wax 2.jpg" width="220" heigth="165"
-                alt="Hair gel American crew">
+            </li>
+            <li class="catalog-item">
+              <a href="catalog-item.html">
+                <h3>
+                  <span class="catalog-category">Hair gel</span>
+                  <span class="catalog-item-title">"American crew"</span>
+                </h3>
+                <p class="catalog-item-image">
+                  <img src="img\shop\wax 2.jpg" width="220" heigth="165"
+                  alt="Hair gel American crew">
+                </p>
+              </a>
+              <p class="catalog-item-price">
+                <b>17 $</b>
+                <a class="button" href="#">Buy</a>
               </p>
-            </a>
-            <p class="catalog-item-price">
-              <b>17 $</b>
-              <a class="button" href="#">Buy</a>
-            </p>
-          </li>
-          <li class="catalog-item">
-            <a href="catalog-item.html">
-              <h3>
-                <span class="catalog-category">Shaving set</span>
-                <span class="catalog-item-title">"Baxter of California"</span>
-              </h3>
-              <p class="catalog-item-image">
-                <img src="img\shop\set shave.jpg" width="220" heigth="165"
-                alt="Shaving set Baxter of califotnia">
+            </li>
+            <li class="catalog-item">
+              <a href="catalog-item.html">
+                <h3>
+                  <span class="catalog-category">Shaving set</span>
+                  <span class="catalog-item-title">"Baxter of California"</span>
+                </h3>
+                <p class="catalog-item-image">
+                  <img src="img\shop\set shave.jpg" width="220" heigth="165"
+                  alt="Shaving set Baxter of califotnia">
+                </p>
+              </a>
+              <p class="catalog-item-price">
+                <b>40 $</b>
+                <a class="button" href="#">Buy</a>
               </p>
-            </a>
-            <p class="catalog-item-price">
-              <b>40 $</b>
-              <a class="button" href="#">Buy</a>
-            </p>
-          </li>
-        </ul>
-        <ul class="pagination-list">
-            <li class="pagination-item"><a href="#">1</a></li>
-            <li class="pagination-item pagination-item-current"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">4</a></li>
-        </ul>
-      </section>
-    </main>
-    <footer class="main-footer">
-      <p class="footer-contacts">
-        Barbershop 'Borodinsky'<br>
-        Address: St. Petersburg, B. Konyushennaya, 19/8
-        <a href="map.html">How to find us?</a><br>
-        Phone: +7 (812) 666-02-66
-      </p>
-      <div class="footer-social">
-        <p>Let's be friends!</p>
-        <ul>
-          <li><a class="social button" href="#">Vkontakte</a></li>
-          <li><a class="social button" href="#">Facebook</a></li>
-          <li><a class="social button" href="#">Instagram</a></li>
-        </ul>
+            </li>
+          </ul>
+          <ul class="pagination-list">
+              <li class="pagination-item"><a href="#">1</a></li>
+              <li class="pagination-item pagination-item-current"><a href="#">2</a></li>
+              <li class="pagination-item"><a href="#">3</a></li>
+              <li class="pagination-item"><a href="#">4</a></li>
+          </ul>
+        </section>
       </div>
-      <p class="footer-copyright">
-        <b>Designed by:</b>
-        <a class="button" href="https://www.linkedin.com/in/andrey-myantyukharyu-aa5a9373/">Andrey Myantyukharyu</a>
-      </p>
+
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <p class="footer-contacts">
+          Barbershop 'Borodinsky'<br>
+          Address: St. Petersburg, B. Konyushennaya, 19/8
+          <a href="map.html">How to find us?</a><br>
+          Phone: +7 (812) 666-02-66
+        </p>
+        <div class="footer-social">
+          <p>Let's be friends!</p>
+          <ul>
+            <li><a class="social button" href="#">Vkontakte</a></li>
+            <li><a class="social button" href="#">Facebook</a></li>
+            <li><a class="social button" href="#">Instagram</a></li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          <b>Designed by:</b>
+          <a class="button" href="https://www.linkedin.com/in/andrey-myantyukharyu-aa5a9373/">Andrey Myantyukharyu</a>
+        </p>
+      </div>
     </footer>
 
     <section class="modal modal-login">
       <h2>My account</h2>
       <p>Enter your username and password</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="login form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label for="user-login">Login</label>
-          <input id="user-login" type="email" name="login" placeholder="email@example.com">
+          <label class="visually-hidden" for="user-login">Login</label>
+          <input class="login-icon-user" id="user-login" type="email" name="login" placeholder="email@example.com">
         </p>
         <p>
-          <label for="user-password">Password</label>
-          <input id="user-password" type="password" name="password" value="*********">
+          <label class="visually-hidden" for="user-password">Password</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" value="*********">
         </p>
-        <p>
-          <input type="checkbox" name="remember" id="login-password-info">
-          <label for="login-password-info">Remember me</label>
-          <a href="#">Forgot password</a>
+        <p class="login-password-info">
+          <label class="checkbox">
+            <input class="visually-hidden" type="checkbox" name="remember">
+            <span class="checkbox-indicator"></span>
+            Remember me
+          </label>
+          <a class="restore" href="#">Forgot password</a>
         </p>
-        <button type="submit">
-          Login to
-        </button>
+        <button class="button" type="submit">Login</button>
       </form>
-      <span clas="modal-close">x</span>
+      <button class="modal-close" type="button">x</button>
     </section>
 
     <section class="modal modal-map">
@@ -270,7 +279,7 @@
         <img src="img\index\map mask.png" width="780" height="560"
         alt="Company office at st. Bolshaya Konbshennaya 19/8, St. Petersburg">
       </p>
-      <span clas="modal-close">x</span>
+      <button class="modal-close" type="button">x</button>
     </section>
   </body>
 </html>
