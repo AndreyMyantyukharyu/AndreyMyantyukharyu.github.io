@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>"Barbershop "Borodinsky"</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo"  href="index.html">
+          <img src="img/index/index-logo.svg" width="368" height="153"
+          alt="Logo Barbershopа 'Borodinsky'">
+        </a>
+        <div class="main-navigation-wrapper">
+          <div class="container">
+            <ul class="site-navigation">
+              <li><a href="info.html">Information</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="price.html">Price</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+            <ul class="user-navigation">
+              <li>
+                <a class="login-link"  href="../Barbershop/img/svg/login.svg">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div> 
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="features">
+            <p>Educational project</p>
+            <p>Work items:</p>
+            <ul>
+              <li>Navigation</li>
+              <li>Login</li>
+              <li>Booking time</li>
+              <li>Price</li>
+              <li>Shop</li>
+              <li>Travel kit "Baxter of California" item description</li>
+              <li>Some elements have status "disabled" or "checked"</li>
+            </ul>
+      </section>
+    </main>
+
+    
+
+    <section class="modal modal-login">
+      <h2>My account</h2>
+      <p class="modal-description">Enter your e-mail and password</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+              <label class="visually-hidden" for="user-login">Login</label>
+              <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="email@example.com">
+          </p>
+          <p>
+              <label class="visually-hidden" for="user-password">Password</label>
+              <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="*******">
+          </p>
+          <p class="login-help">
+              <label class="login-checkbox">
+                  <input type="checkbox" name="remember" class="visually-hidden">
+                  <span class="checkbox-indicator"></span>
+                  Remember me
+              </label>
+              <a class="restore" href="#">Forgot password</a>
+          </p>
+          <button class="button" type="submit">Login</button>
+      </form>
+      <button class="modal-close" type="button">Close</button>
+    </section>
+
+    <script src="js/popup.js"></script>
+  </body>
+</html>
