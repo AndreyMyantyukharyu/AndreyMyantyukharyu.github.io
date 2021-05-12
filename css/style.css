@@ -145,7 +145,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   width: 620px;
- 
+  
 }
 
 .user-navigation {
@@ -312,8 +312,8 @@ input[type="radio"].visually-hidden {
 }
 
 .gallery-content {
-height: 164px;
-margin: 0;
+  height: 164px;
+  margin: 0;
 
   background-color: #cccccc;
   border: 7px solid #ffffff;
@@ -337,7 +337,7 @@ margin: 0;
   left: 0;
 }
 .gallery-button-next {
-  left: 0;
+  right: 0;
 }
 
 .contacts {
@@ -1071,6 +1071,46 @@ margin: 0;
   background-color: #ffffff;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   position: fixed;
   color: #000000;
@@ -1080,16 +1120,30 @@ margin: 0;
   background-position: 0 0;
   background-repeat: repeat;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
 }
 
 .modal-login {
   top: 120px;
   left: 50%;
+  
   display: none;
+
   width: 300px;
   margin-left: -230px;
   padding: 50px 80px;
 }
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 
 .modal-close {
   position: absolute;
@@ -1256,8 +1310,9 @@ margin: 0;
   left: 50%;
 
   display: none;
-  width: 766px;
-  height: 561px;
+
+  width: 600px;
+  height: 450px;
   margin-top: -280px;
   margin-left: -390px;
   
@@ -1265,5 +1320,17 @@ margin: 0;
 }
 
 .modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
   margin: 0;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
 }
