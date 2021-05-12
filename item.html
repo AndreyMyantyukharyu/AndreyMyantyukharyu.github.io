@@ -20,10 +20,10 @@
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Information</a></li>
-          <li><a href="news.html">News</a></li>
+          <li><a href="#">News</a></li>
           <li><a href="price.html">Price</a></li>
           <li><a href="catalog.html">Shop</a></li>
-          <li><a href="contacts.html">Contacts</a></li>
+          <li><a href="#">Contacts</a></li>
         </ul>
         <ul class="user-navigation">
           <li><a class="login-link" href="login.html">Login</a></li>
@@ -141,7 +141,33 @@
       </div>
     </footer>
 
-    
+    <section class="modal modal-login">
+      <h2>My account</h2>
+      <p class="modal-description">Enter your e-mail and password</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+              <label class="visually-hidden" for="user-login">Login</label>
+              <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="email@example.com">
+          </p>
+          <p>
+              <label class="visually-hidden" for="user-password">Password</label>
+              <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="*******">
+          </p>
+          <p class="login-help">
+              <label class="login-checkbox">
+                  <input type="checkbox" name="remember" class="visually-hidden">
+                  <span class="checkbox-indicator"></span>
+                  Remember me
+              </label>
+              <a class="restore" href="#">Forgot password</a>
+          </p>
+          <button class="button" type="submit">Login</button>
+      </form>
+      <button class="modal-close" type="button">Close</button>
+    </section>
+
+
+  <script src="js/popup.js"></script>
 
     
   </body>
