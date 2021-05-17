@@ -1,1 +1,2 @@
-# Barber. My first HTML/CSS project.
+# Barber. 
+My first HTML/CSS project.
